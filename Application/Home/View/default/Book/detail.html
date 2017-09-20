@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="__PUBLIC__{$Think.config.bootstrap_css}" rel="stylesheet">
+    <script src="__PUBLIC__{$Think.config.jquery_js}"></script>
+    <script src="__PUBLIC__{$Think.config.bootstrap_js}"></script>
+    <script src="__PUBLIC__/js/home-bookinfo.js"></script>
+	<title>详情</title>
+	<style>
+	img{
+		width:105px;height:145px;
+	}
+	p.title{
+		white-space:nowrap;
+		overflow:hidden;
+		text-overflow:ellipsis;
+	}
+	</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="__APP__" style="padding-bottom: 0px; padding-top: 0px; padding-left: 0px;">
+	        <img alt="Brand" src="__PUBLIC__/img/logo.gif" style="width:100px;height:50px;"/>
+	      </a>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="container">
+		<div class="col-md-offset-1 col-md-8">
+			<div class="row">
+				<div class="col-md-offset-1">
+					<h3 class="text-primary" id="title"></h3>
+				</div>
+			</div>
+		  	<div class="row">
+				<div class="col-md-offset-1 col-md-2">
+					<div class="row">			  
+					  <img id="cover"/>
+					</div>
+					
+				</div>
+				<div class="col-md-7" style="color:#666;">
+					
+					<div class="row">
+					  作者：<a href="#" id="author">白岩松</a><br/>
+					</div>
+					<div class="row">
+					  点击量：<span id="count"></span><br/>
+					</div>
+					<hr/>
+					<div class="row">
+					  价格:<span id="price"></span><br/>
+					</div>
+					<div class="row">
+					  类型：<span id="type"></span><br/>
+					</div>
+					<div class="row">
+					  上架时间：<span id="pubdate"></span><br/>
+					</div>
+					<div class="row">
+					  ISBN:<span id="isbn"></span><br/>
+					</div>
+					<div class="row">
+					  出版社:<span id="publisher"></span><br/>
+					</div>
+		        </div>
+		    </div>
+		    <div class="row"><p>&nbsp;</p></div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-1">
+					<br/>
+					<div style="border-bottom:1px #428bca solid;">
+					<span class="badge" style="font-size:24px; color:#fff; background-color:#428bca; ">详</span>&nbsp;
+					<span class="text-primary">情介绍:</span>
+					</div>
+					<div class="content" style="color:#666;">
+					    <p id="description"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="row text-primary">
+				<dic class="col-md-8">
+					<h3 class="">这些也不错</h3>
+				</dic>
+				<div class="col-md-4">
+				<p>&nbsp;</p>
+				<span class="label label-primary" id="change">换一批</span>
+				</div>
+					
+			</div>
+			<hr style="margin:5px 0"/>
+			<div class="row" id="others">
+			</div>
+		</div>
+
+		<div class="col-md-2">
+		</div>
+	</div>
+	
+
+	<div class="container">
+		<p style="height:100px;">&nbsp;</p>
+	</div>
+	<div class="well navbar navbar-fixed-bottom" style="margin-bottom:0;">
+	  <span class="center-block text-center"><a 
+	          onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('index.html');" 
+	          href="index.html">设为首页</a>　|&nbsp;&nbsp; <a href="http://url.cn/SZkzYc">加入我们</a> <br/>
+	          Copyright @ 毅行者<br></span>
+	</div>
+</body>
+</html>

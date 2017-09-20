@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="__PUBLIC__{$Think.config.bootstrap_css}" rel="stylesheet">
+    <script src="__PUBLIC__{$Think.config.jquery_js}"></script>
+    <script src="__PUBLIC__{$Think.config.bootstrap_js}"></script>
+    <script src="__PUBLIC__/js/home-search.js"></script>
+    <title>搜索</title>
+    <style>
+    img{
+      width:105px;
+      height:145px;
+    }
+    </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="__ROOT__" style="padding-bottom: 0px; padding-top: 0px; padding-left: 0px;">
+	        <img alt="Brand" src="__PUBLIC__/img/logo.gif" style="width:100px;height:50px;"/>
+	      </a>
+	    </div>
+	  </div>
+	</nav>
+    <div class="row">
+      <h4 class="col-md-offset-2 container col-md-6 text-right" id="options">
+      </h4>
+    </div>
+    <div class="row">
+      <div class="container col-md-6 text-left col-md-offset-2" id="booklist">
+      </div>
+      <div class="container text-left col-md-4" id="hotSearch"> 
+      		<br/>
+      		<h4>热门搜索......</h4>
+      </div>
+    </div>  
+  </div>
+<div class="row text-center">
+  <ul class="pagination" id="pagination">
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+  </ul>
+</div>
+ 
+  <div class="container">
+    <p style="height:100px;">&nbsp;</p>
+  </div>
+  <div class="well navbar navbar-fixed-bottom" style="margin-bottom:0;">
+  		<span class="center-block text-center"><a 
+              	onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('index.html');" 
+              	href="index.html">设为首页</a>　|&nbsp;&nbsp; <a href="http://url.cn/SZkzYc">加入我们</a> <br/>
+        			Copyright @ 毅行者<br></span>
+  </div>
+</body>
+</html>
